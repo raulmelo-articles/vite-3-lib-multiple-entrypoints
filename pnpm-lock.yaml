@@ -1,12 +1,30 @@
 lockfileVersion: 5.4
 
-specifiers:
-  '@types/node': '16'
-  vite: ^3.0.4
+importers:
 
-devDependencies:
-  '@types/node': 16.11.47
-  vite: 3.0.4
+  .:
+    specifiers:
+      '@types/node': '16'
+      vite: ^3.0.4
+    devDependencies:
+      '@types/node': 16.11.47
+      vite: 3.0.4
+
+  demo:
+    specifiers:
+      typescript: ^4.6.4
+      vite: ^3.0.0
+    devDependencies:
+      typescript: 4.7.4
+      vite: 3.0.4
+
+  packages/import-build-example:
+    specifiers:
+      '@types/node': '16'
+      vite: ^3.0.4
+    devDependencies:
+      '@types/node': 16.11.47
+      vite: 3.0.4
 
 packages:
 
@@ -295,6 +313,12 @@ packages:
   /supports-preserve-symlinks-flag/1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+    dev: true
+
+  /typescript/4.7.4:
+    resolution: {integrity: sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
     dev: true
 
   /vite/3.0.4:
