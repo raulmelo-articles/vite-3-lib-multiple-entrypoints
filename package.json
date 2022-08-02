@@ -1,0 +1,8 @@
+{
+  "name": "vite-3-lib-multiple-entrypoints",
+  "description": "This is a demo of building a library with multiple entrypoints",
+  "devDependencies": {
+    "@types/node": "16",
+    "vite": "^3.0.4"
+  }
+}
