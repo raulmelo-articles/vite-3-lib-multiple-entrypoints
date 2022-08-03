@@ -1,8 +1,12 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import { setupCounter } from './counter'
+import "./style.css";
+import typescriptLogo from "./typescript.svg";
+import { setupCounter } from "./counter";
+import { sum } from "@examples/import-vite-build/math";
+import { logger } from "@examples/import-vite-build/logger";
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+logger.log(`Sum of 1 and 2 is ${sum(1, 2)}`);
+
+document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -18,6 +22,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       Click on the Vite and TypeScript logos to learn more
     </p>
   </div>
-`
+`;
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+setupCounter(document.querySelector<HTMLButtonElement>("#counter")!);

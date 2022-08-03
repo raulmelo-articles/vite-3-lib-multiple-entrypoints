@@ -1,8 +1,9 @@
 {
-  "name": "import-build",
+  "name": "@examples/import-vite-build",
   "version": "1.0.0",
   "description": "This is a demo of building a library with multiple entrypoints",
   "type": "module",
+  "types": "./index.d.ts",
   "exports": {
     "./math": {
       "import": "./dist/math.js",
@@ -14,9 +15,11 @@
     }
   },
   "files": [
-    "dist"
+    "dist/*",
+    "index.d.ts"
   ],
   "scripts": {
+    "def-gen": "tsc --declarationDir dist/ --emitDeclarationOnly --declaration",
     "build": "node scripts/build.mjs"
   },
   "keywords": [],
