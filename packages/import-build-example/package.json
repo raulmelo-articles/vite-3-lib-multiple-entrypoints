@@ -21,9 +21,11 @@
     "math.d.ts"
   ],
   "scripts": {
+    "prepare": "pnpm run build",
+    "clean:dist": "rimraf dist/",
     "build:definitions": "tsc src/*.ts --declaration --emitDeclarationOnly --declarationDir dist/",
     "build:files": "node scripts/build.mjs",
-    "build": "pnpm run build:files && pnpm run build:definitions"
+    "build": "pnpm run clean:dist && pnpm run build:files && pnpm run build:definitions"
   },
   "keywords": [],
   "author": "",
