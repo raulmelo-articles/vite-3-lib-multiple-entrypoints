@@ -29,9 +29,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/node": "16",
-    "vite": "^3.0.4"
-  }
+  "license": "ISC"
 }
