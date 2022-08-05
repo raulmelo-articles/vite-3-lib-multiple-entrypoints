@@ -3,6 +3,7 @@
   "description": "This is a demo of building a library with multiple entrypoints",
   "devDependencies": {
     "@types/node": "16",
+    "rimraf": "3.0.2",
     "typescript": "^4.6.4",
     "vite": "^3.0.4"
   }
