@@ -1,6 +1,6 @@
 # Build a JavaScript library with multiple entry points using Vite 3 (Demo)
 
-<!-- TODO: add post list -->
+> Repository for: https://www.raulmelo.dev/blog/build-javascript-library-with-multiple-entry-points-using-vite-3
 
 To make easier the vizualization of how that would work, I've created this repository that uses pnpm workspaces so I can have the demo app and the lib examples working fine.
 
