@@ -6,14 +6,11 @@ export default defineConfig({
     outDir: "dist",
     sourcemap: true,
     lib: {
-      // fileName,
+      fileName: "[name]",
       formats: ["cjs", "es"],
     },
     rollupOptions: {
-      input: {
-        "math.js": "./src/math.ts",
-        "logger.js": "./src/logger.ts",
-      },
+      input: ["./src/math.ts", "./src/logger.ts"],
     },
   },
 });
