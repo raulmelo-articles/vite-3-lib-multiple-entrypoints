@@ -1,0 +1,35 @@
+{
+  "name": "@examples/using-vite-32",
+  "version": "1.0.0",
+  "description": "This is a demo of building a library with multiple entrypoints",
+  "type": "module",
+  "exports": {
+    "./math": {
+      "import": "./dist/math.js",
+      "require": "./dist/math.cjs"
+    },
+    "./logger": {
+      "import": "./dist/logger.js",
+      "require": "./dist/logger.cjs"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/*",
+    "index.d.ts",
+    "logger.d.ts",
+    "math.d.ts"
+  ],
+  "scripts": {
+    "prepare": "pnpm run build",
+    "clean:dist": "rimraf dist/",
+    "build:types": "tsc src/*.ts --declarationDir dist/ --emitDeclarationOnly --declaration",
+    "build:lib": "vite build",
+    "build": "pnpm run clean:dist && pnpm run build:lib && pnpm run build:types"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "3.2.1"
+  }
+}
