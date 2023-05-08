@@ -1,8 +1,8 @@
 export const logger = {
-  log: (message: string) => {
+  log: (message) => {
     console.log("[LOG]", message);
   },
-  error: (message: string) => {
+  error: (message) => {
     console.error("[ERROR]", message);
   },
 };

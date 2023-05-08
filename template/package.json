@@ -6,7 +6,6 @@
     "build": "vite build"
   },
   "devDependencies": {
-    "typescript": "4.7.4",
     "vite": "4.3.5"
   }
 }
