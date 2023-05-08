@@ -1,0 +1,21 @@
+{
+  "name": "core",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    "./math": {
+      "import": "./dist/math.js",
+      "require": "./dist/math.cjs"
+    },
+    "./logger": {
+      "import": "./dist/logger.js",
+      "require": "./dist/logger.cjs"
+    }
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "4.3.5"
+  }
+}
