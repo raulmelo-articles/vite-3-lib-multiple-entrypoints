@@ -17,13 +17,11 @@ importers:
         specifier: 3.0.4
         version: 3.0.4
 
-  demo: {}
-
-  packages/folder-structure:
+  demo:
     devDependencies:
-      vite:
-        specifier: 4.3.5
-        version: 4.3.5(@types/node@16.11.47)
+      core:
+        specifier: workspace:*
+        version: link:../packages/manual
 
   packages/manual:
     devDependencies:
